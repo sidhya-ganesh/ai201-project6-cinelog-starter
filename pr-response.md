@@ -1,6 +1,6 @@
 # PR Response Doc: CineLog Watchlist Feature
 
-## AI Usage
+## AI Usage 
 I used Claude (Anthropic's AI assistant) throughout this project in a few specific ways:
 
 1. **Codebase orientation before touching the review comments.** Before looking at any of the six comments, I had Claude walk through `collection_service.py` and `test_collection.py` with me so I understood the existing `add_to_collection()` dedup pattern and test fixture structure before writing my own versions for the watchlist.
