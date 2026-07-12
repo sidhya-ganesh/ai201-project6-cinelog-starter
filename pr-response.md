@@ -47,6 +47,11 @@ I used Claude (Anthropic's AI assistant) throughout this project in a few specif
 
 **How I verified no conflict remains:** Ran `pytest tests/ -v` right after the rebase finished, which is what actually caught the missing `WatchlistEntry` class, since git reported "Successfully rebased" with no conflict warning at all. After re-adding the model and fixing the docstring, all 5 tests passed. I also ran `git log --oneline --graph` to confirm my branch's own commits form a straight line with no merge commits (the one merge commit visible, "Merge pull request #2 from ascherj/chore/add-gitignore", is inherited from `main`'s own history from before my branch started, not something I created).
 
+## Commit history screenshot
+
+<img width="941" height="454" alt="image" src="https://github.com/user-attachments/assets/9a7c938e-f9f0-4dc1-a435-d2cda415b0ae" />
+
+
 ## PR Description
 
 ### What this PR does
